@@ -1,0 +1,106 @@
+body{
+    background: f1fbff;
+}
+
+.section-padding{
+    padding: 100px 0;
+}
+.navbar-nav a {
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: 500;
+}
+.navbar-light .navbar-brand {
+	color: #000;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+.navbar-light .navbar-nav .nav-link {
+	color: #000;
+}
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+	color:rgb(240, 13, 13);
+}
+.carousel-item{
+    height: 99vh;
+    min-height: 300px;
+	/* opacity: 0.5; */
+}
+.carousel-caption {
+	bottom: 220px;
+	z-index: 2;
+	top: 200px;
+	
+}
+.carousel-caption h5 {
+	font-size: 45px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	margin-top: 25px;
+	color: black;
+	margin-right: 400px;
+}
+.carousel-caption p {
+	width: 60%;
+	margin: auto;
+	font-size: 18px;
+	line-height: 1.9;
+	color: black;
+	margin-right: 850px;
+
+}
+h2{
+	text-align: center;
+	/* font-size: medium; */
+	color: blue;
+}
+h3,p{
+	text-align: center;
+}
+.submit {
+    position: inherit;
+    top: 80px;
+    background-color: #aa0423;
+    border: none;
+    color: white;
+    padding: 20px 50px;
+    margin: 20px 2px;
+    cursor: pointer;
+    float: center;
+}
+.formcont{
+	background-color: #fff;
+    max-width: 500px;
+    margin: 10px ;
+    padding: 50px 20px;
+    margin-left: 475px;
+    margin-top:3px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);	
+}
+.formc{
+	text-align: left;
+    margin-bottom: 25px;
+}
+
+
+
+.form-control input{
+	margin-left: 50px;
+	margin-top: 10px;
+}
+.google-map iframe {
+    height: 54vh;
+    width: 90vh;
+    left: 0;
+    top: 0;
+    margin-top: 10px;
+    /* position: absolute; */
+
+}
+.xyz{
+	/* width: 3000px; */
+	margin-left: 650px;
+	margin-top: -400px;
+}

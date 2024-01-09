@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Travel Insurance Prediction</title>
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand " href="#">
+                <img src="../static/images/flight.jpg" alt="" width="100" height="50">
+                <span style="color: red;"><strong>FLY</strong></span><strong>HIGH</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#predict">Predict</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+            </div>
+        </div>
+    </nav>
+    <section class="home section-padding" id="home">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../static/images/bac.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption ">
+                        <h5>Fly High, Fly More</h5>
+                        <p>Wanna fly high and more?</p>
+                        <p>Here's a Chance , Predict the Travel Insurance and plan your Vacation</p>
+                        <p><a href="#predict" class="btn btn-danger">Predict Now</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="predict section-padding" id="predict">
+        <h3>Prediction Time!</h3>
+    <p >Wanna be luck to get travel insurance?</p>
+    <form action="/login" method="post" class="formcont">
+        <div class="formc">
+        <label for="Age">Age: </label>
+        <input type="number" name="Age">
+        </div>
+        <div class="formc">
+        <label for="EmploymentType">Employment Type:</label>
+        <!-- <input type="button" value="Private Sector/Self Employed" name="EmploymentType"> -->
+        <select name="EmploymentType" >
+            <option value="Private Sector/Self Employed">Private Sector/Self Employed</option>
+            <option value="Government Sector">Government Sector</option>
+        </select>
+        </div>
+        <div class="formc">
+            <label for="Graduate"> Graduate:</label>
+            <select name="Graduate">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+        <div class="formc">
+            <label for="AnnualIncome">Annual Income:</label>
+            <input type="number" name="AnnualIncome">
+        </div>
+        <div class="formc">
+            <label for="Familymemeber">Family Memeber</label>
+            <input type="number" name="Familymemeber">
+        </div>
+        <div class="formc">
+            <label for="Chornicdisease">Chornic Disease</label>
+            <select name="Chornicdisease">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+        <div class="formc">
+            <label for="Frequentflyer">Frequent Flyer</label>
+            <select name="Frequentflyer">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+        <div class="formc">
+            <label for="travelledabroad">Travelled Abroad</label>
+            <select name="travelledabroad">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+        <div class="formc">
+            <label for="travelins">Travel Insurance</label>
+            <select name="travelins" >
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+        </div>
+        <div class="formc">
+            <input class="submit" type="submit" value="Submit">
+        </div>
+    </form>
+    <h2>{{y}}</h2>
+    </section>
+    <section class="contact section-padding" id="contact">
+        <div class="section-header text-center ">
+            <h2>Contact Us</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="google-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2990.274257380938!2d-70.56068388481569!3d41.45496659976631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e52963ac45bbcb%3A0xf05e8d125e82af10!2sDos%20Mas!5e0!3m2!1sen!2sus!4v1671220374408!5m2!1sen!2sus"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <!-- <div class="row"> -->
+            <div class="xyz">
+                <div class="row m-0">
+                    <div class="col-md-12 p-0 pt-4 pb-4">
+                        <form action="#" class="bg-light p-4 m-auto">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="mb-3">
+                                        <label for="myname"> Name:</label>
+                                        <input class="form-control" placeholder="Full Name" required="" type="text"
+                                            name="myname">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="mb-3">
+                                        <label for="myemail"> Email:</label>
+                                        <input class="form-control" placeholder="Email" required="" type="email"
+                                            name="myemail">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="mb-3">
+                                        <label for="mymess"> Message:</label>
+                                        <textarea class="form-control" placeholder="Message" required="" name="mymess"
+                                            rows="3"></textarea>
+                                    </div>
+                                </div><button class="btn btn-danger btn-lg btn-block mt-3" type="button">Send
+                                    Now</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- </div> -->
+    </section>
+    <footer class="text-center text-lg-start bg-light text-dark">
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div>
+                <a href="https://www.facebook.com/" target="_blank" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com/" target="_blank" class="me-4 text-reset">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.google.com/" target="_blank" class="me-4 text-reset">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="https://www.instagram.com/?hl=en" target="_blank" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://in.linkedin.com/" target="_blank" class="me-4 text-reset">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/login" target="_blank" class="me-4 text-reset">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <img src="../static/images/flight.jpg" alt="" width="100" height="50"><span
+                                class="text-danger"><strong>FLY</strong></span><strong>HIGH</strong>
+                        </h6>
+                        <p>
+                            For more details Contact us
+                        </p>
+                    </div>
+                    
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            info@example.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                        <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
